@@ -1,0 +1,19 @@
+---
+layout: post
+title: Test Blog Post 1
+categories: general-update
+---
+Hello and welcome to my content.
+This post serves as an example of what I can do using the post format provided by Jekyll. This text is quite simply entered, and images are easy to implement as well. Here's one:
+![Example image]({{ site.url}}/assets/example.jpg)
+
+Another great feature seems to be code snippets. Here's one:
+{% highlight ruby linenos %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}
